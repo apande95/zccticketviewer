@@ -24,11 +24,9 @@ def req_session(token):
 
 
 with open('testing.yaml', 'r') as stream:
-    data_loaded = yaml.safe_load(stream).split()
-
-infourl = data_loaded[0].split('=')[1]
-infotoken = {'Authorization': 'Basic {}'.format(data_loaded[1].split('=')[1])}
-print(infotoken)
+    data_loaded = yaml.safe_load(stream)
+    infourl = data_loaded['URL']
+    infotoken = {'Authorization': 'Basic {}'.format(data_loaded['TOKEN'])}
 
 # client = req_session(infotoken)
 
