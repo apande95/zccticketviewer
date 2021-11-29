@@ -16,7 +16,7 @@ This application was created for Zendesk Intern Coding Challenge. The applicatio
 git clone https://github.com/apande95/zccticketviewer
 cd zccticketviewer
 ```
-2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those.
+2. This project uses Python 3, so make sure that [Python](https://www.python.org/downloads/) and [Pip](https://pip.pypa.io/en/stable/installation/) are preinstalled. All requirements of the project are listed in the ```requirements.txt``` file. Use pip to install all of those. For further isolation please use a virtual environment [ Python3 -m venv . ] and then source the activate file in bin.
 ```
 pip3 install -r requirements.txt
 ```
