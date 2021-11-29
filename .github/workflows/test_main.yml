@@ -33,4 +33,5 @@ jobs:
         echo 'Created testing.yaml'
         pwd
         pytest --cov-report xml:codecoverage.xml --cov=./ ./
-        cp codecoverage.xml coverage.xml
+        cp codecoverage.xml coverage.txt
+        cat coverage.txt
