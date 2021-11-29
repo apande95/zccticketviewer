@@ -20,8 +20,6 @@ def req_session():
 
 #Prints tabulated json objects
 def print_table(tickets):
-    # print(tickets)
-    # print(len(tickets))
     #because of space contraints in a terminal, the following columns are the only ones displayed.
     try:
         keys = ['id', 'created_at', 'type', 'subject', 'priority', 'status']
@@ -62,9 +60,9 @@ def fetch_all_ticket(s, url, navigator=False):
         if navigation not in (1, 2, 3):
             raise Fails('Invalid page navigation movement\n')
         elif navigation == 1:
-            fetch_all_ticket(s, prev,navigator=True)
+            fetch_all_ticket(s, prev, navigator=True)
         elif navigation == 2:
-            fetch_all_ticket(s, next,navigator=True)
+            fetch_all_ticket(s, next, navigator=True)
         elif navigation == 3:
             return 0
     except Exception as e:
@@ -96,7 +94,7 @@ def main():
         )
         try:
             choice = int(inp)
-            if choice not in (1, 2, 3, 4):
+            if choice not in (1, 2, 3):
                 raise Fails('choice not correct')
             elif choice == 1:
                 fetch_all_ticket(s,
@@ -112,8 +110,6 @@ def main():
                     s, ZENDESK['CLIENT_URL'] + ZENDESK['TICKETS_URL'] +
                     ticket_str)
             elif choice == 3:
-                break
-            elif choice == 4:
                 break
         except Exception as e:
             print('Error in input :', str(e))
