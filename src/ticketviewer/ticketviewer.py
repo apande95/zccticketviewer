@@ -62,9 +62,9 @@ def fetch_all_ticket(s, url, navigator=False):
         if navigation not in (1, 2, 3):
             raise Fails('Invalid page navigation movement\n')
         elif navigation == 1:
-            fetch_all_ticket(s, prev)
+            fetch_all_ticket(s, prev,navigator=True)
         elif navigation == 2:
-            fetch_all_ticket(s, next)
+            fetch_all_ticket(s, next,navigator=True)
         elif navigation == 3:
             return 0
     except Exception as e:
