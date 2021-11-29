@@ -1,6 +1,7 @@
-# Virtual Env stuff
+# Virtual Env stuff and secrets
 /bin/*
 pyvenv.cfg
+testing.yaml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
