@@ -26,7 +26,7 @@ jobs:
         
     - name: Test with pytest
       run: |
-        cd ./backend
+        cd ./src
         printf '..%s..' "$foo"
         printf 'TOKEN: %s\nURL: %s' "$TOKEN" "$URL"> testing.yaml
         cat testing.yaml
