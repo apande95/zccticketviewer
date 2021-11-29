@@ -11,7 +11,7 @@ echo ''
 echo 'please check the token and URL'
 echo ''
 echo 'cli application starting in 3 sec'
-sleep .5
+sleep 2
 clear
 
 #running the main python file TBD
