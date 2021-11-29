@@ -43,3 +43,11 @@ sh ./setup.sh
 ---
 
 https://github.com/apande95/zccticketviewer/blob/main/zccTicketViewerDemo.mp4
+
+:rocket: Code Coverage and testing 
+---
+
+- Pytest used for testing, workflow is setup which runs all the test cases on git push.
+- CodeCov is used for code coverage. Its only ~50 for now but will be imporved if time permits.
+- Please see https://github.com/apande95/zccticketviewer/blob/main/src/test_ticketviewer.py file for test cases. 
+
