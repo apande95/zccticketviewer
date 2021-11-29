@@ -20,6 +20,14 @@ cd zccticketviewer
 ```
 pip3 install -r requirements.txt
 ```
+
+3. Create a config.exe file in src and save the url and token(API token) of your application inside like below. URL can be changed to your own domain.
+
+```
+TOKEN=<API TOKEN>
+URL=https://zccapande.zendesk.com
+```
+
 4. Once all the requirements are installed, you will have to ```cd``` into the ```src``` folder. Once in the ```src``` folder, use the shell sh command to run the ```setup.sh``` file.
 ```
 cd src
