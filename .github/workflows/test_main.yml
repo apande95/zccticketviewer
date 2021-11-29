@@ -33,3 +33,4 @@ jobs:
         echo 'Created testing.yaml'
         pwd
         pytest --cov-report xml:cov.xml --cov=./ ./
+        cat cov.xml
