@@ -35,3 +35,7 @@ jobs:
         pytest --cov-report xml:codecoverage.xml --cov=./ ./
         cp codecoverage.xml coverage.txt
         cat coverage.txt
+    - name: "Upload coverage to Codecov"
+      uses: codecov/codecov-action@v2.1.0
+      with:
+        fail_ci_if_error: true
