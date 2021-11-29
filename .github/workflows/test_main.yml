@@ -1,0 +1,35 @@
+name: Pytest CI
+
+on:
+  push:
+    branches:
+      - "main"
+  
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    env:
+        URL: ${{ secrets.URL }}
+        TOKEN: ${{ secrets.TOKEN }}
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install pytest pytest-cov coverage
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+        
+    - name: Test with pytest
+      run: |
+        cd ./backend
+        printf '..%s..' "$foo"
+        printf 'TOKEN: %s\nURL: %s' "$TOKEN" "$URL"> testing.yaml
+        cat testing.yaml
+        echo 'Created testing.yaml'
+        pwd
+        pytest --cov-report xml:cov.xml --cov=./ ./
