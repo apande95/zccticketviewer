@@ -1,4 +1,5 @@
 # Zendesk Ticket Viewer
+![GitHub](https://img.shields.io/github/license/apande95/zccticketviewer)\
 ![Github](https://img.shields.io/badge/language-python-red.svg)\
 This application was created for Zendesk Intern Coding Challenge. The application fulfills the following tasks:
 
