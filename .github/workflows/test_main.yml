@@ -32,5 +32,5 @@ jobs:
         cat testing.yaml
         echo 'Created testing.yaml'
         pwd
-        pytest --cov-report xml:cov.xml --cov=./ ./
-        cat cov.xml
+        pytest --cov-report xml:codecoverage.xml --cov=./ ./
+        cat codecoverage.xml > ./src/coverage.xml
