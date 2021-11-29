@@ -15,3 +15,4 @@ requests==2.26.0
 tabulate==0.8.9
 toml==0.10.2
 urllib3==1.26.7
+yaml
