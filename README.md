@@ -1,7 +1,7 @@
 # Zendesk Ticket Viewer
 ![GitHub](https://img.shields.io/github/license/apande95/zccticketviewer)
 ![Github](https://img.shields.io/badge/language-python-red.svg)
-[![Test Application](https://github.com/apande95/zccticketviewer/blob/main/.github/workflows/test_main.yml/badge.svg)](https://github.com/apande95/zccticketviewer/blob/main/.github/workflows/test_main.yml)\
+[![Pytest Testcases](https://github.com/apande95/zccticketviewer/actions/workflows/test_main.yml/badge.svg)](https://github.com/apande95/zccticketviewer/actions/workflows/test_main.yml)\
 This application was created for Zendesk Intern Coding Challenge. The application fulfills the following tasks:
 
 - Connect to the Zendesk API
